@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Cocapu</string>
+    <string name="app_name">CoC API</string>
+
+    <!-- Player information -->
+    <string name="player_inf_tag">Player tag</string>
+    <string name="player_inf_name">Player name</string>
+    <string name="player_inf_town_hall_lvl">Town hall level</string>
+    <string name="player_info_exp_lvl">Experience level</string>
+    <string name="player_info_trophies">Trophies</string>
+    <string name="player_inf_toolbar_title">Player information</string>
 </resources>

@@ -8,7 +8,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import io.github.andruid929.cocapi.attributes.Troop;
 import io.github.andruid929.cocapi.information.Player;
+import io.github.andruid929.cocapi.resourcetype.Info;
+import io.github.andruid929.cocapi.resourcetype.PlayerInfo;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,5 +25,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        String playerInfoJsonString = PlayerInfo.getPlayerInfo("");
+
+        Player player = new Player(playerInfoJsonString);
+
+        player.getTrophies();
+
+        Troop numberOne = player.getTroops()[0];
     }
 }
